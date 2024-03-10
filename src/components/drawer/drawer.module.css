@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.drawerThumb {
+  position: fixed; /* Используем fixed для фиксации модального окна на экране */
+  width: 100%; /* Занимаем 100% ширины экрана */
+  height: 100%; /* Занимаем 100% высоты экрана */
+  top: 0;
+  left: 0; /* Размещаем модальное окно в верхнем левом углу */
+  padding: 20px;
+  background-color: #fff;
+  z-index: 1000;
+  overflow: "auto";
+}
+@media (min-width: 1200px) {
+  .drawerThumb {
+    width: 20vw;
+    right: 0;
+    left: auto; /* Правый отступ для ширины 20vw */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.drawerTitleThumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drawerClose {
+  width: 20px;
+  cursor: pointer;
+}
+.drawerClose:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.AddedItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.priceThumb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.deleteButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.deleteButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.drawerButtonThumb {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.drawerButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.drawerButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+@media (min-width: 1200px) {
+  .drawerButton {
+    width: 260px;
+  }
+}/*# sourceMappingURL=drawer.module.css.map */

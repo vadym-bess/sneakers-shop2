@@ -1,0 +1,48 @@
+.logo {
+  width: 100px;
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+.logoThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basketThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header {
+  position: sticky;
+  background-color: #fff;
+  z-index: 999;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.basket {
+  width: 30px;
+}
+
+.basketText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .basketText {
+    margin-right: 50px;
+  }
+}/*# sourceMappingURL=header.css.map */
